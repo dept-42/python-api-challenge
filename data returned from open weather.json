@@ -1,0 +1,25 @@
+response = {
+'coord': {'lon': 2.3488, 'lat': 48.8534}, 
+'weather': [{'id': 801, 'main': 'Clouds', 'description': 'few clouds', 'icon': '02d'}], 
+'base': 'stations', 
+'main': {'temp': 287.05, 'feels_like': 286.69, 'temp_min': 285.92, \
+	'temp_max': 287.64, 'pressure': 1008, 'humidity': 84, 'sea_level': 1008, \
+	'grnd_level': 999}, 
+'visibility': 10000, 
+'wind': {'speed': 3.6, 'deg': 280}, 
+'clouds': {'all': 20}, 
+'dt': 1728579088,
+'sys': {'type': 2, 'id': 2012208, 'country': 'FR', 'sunrise': 1728540217, 'sunset': 1728580266}, 
+'timezone': 7200, 
+'id': 2988507, 
+'name': 'Paris', 'cod': 200
+ }
+ 
+ city_lat = response['coord'[1]]
+ city_lng = response['coord'[0]]
+ city_max_temp = response['main'['temp_max']]
+ city_humidity = response['main'['humidity']]
+ city_clouds = response['clouds'['all']]
+ city_wind = response['wind'['speed']]
+ city_country = response['sys'['country']]
+ city_date = response['dt']
